@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <RootNamespace>CPU_GPU_Namer</RootNamespace>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <ApplicationIcon>assets\edit.ico</ApplicationIcon>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+
+	  <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+	  <PublishSingleFile>true</PublishSingleFile>
+	  <SelfContained>true</SelfContained>
+	  <PublishTrimmed>false</PublishTrimmed>
+	  <PublishAot>false</PublishAot>
+	  <PublishReadyToRun>false</PublishReadyToRun>
+	  <IncludeAllContentForSelfExtract>true</IncludeAllContentForSelfExtract> 
+  </PropertyGroup>
+
+	<ItemGroup>
+    <Content Include="assets\edit.ico" />
+  </ItemGroup>
+
+</Project>
