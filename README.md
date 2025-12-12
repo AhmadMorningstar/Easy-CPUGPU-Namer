@@ -10,7 +10,7 @@
 
 [![GitHub stars](https://img.shields.io/github/stars/ahmadmorningstar/Easy-CPUGPU-Namer?style=social)](https://github.com/ahmadmorningstar/Easy-CPUGPU-Namer/stargazers)  
 [![GitHub forks](https://img.shields.io/github/forks/ahmadmorningstar/Easy-CPUGPU-Namer?style=social)](https://github.com/ahmadmorningstar/Easy-CPUGPU-Namer/network/members)  
-[![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)  
+[![License](https://img.shields.io/badge/License-GNU-green)](LICENSE)  
 
 ---
 
