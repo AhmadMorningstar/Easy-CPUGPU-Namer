@@ -31,9 +31,9 @@
             subheader_label = new Label();
             Header_label = new Label();
             apply_button = new Button();
-            exit_button = new Button();
             description_label = new Label();
             label1 = new Label();
+            github_button = new Button();
             SuspendLayout();
             // 
             // subheader_label
@@ -70,31 +70,15 @@
             apply_button.BackgroundImageLayout = ImageLayout.None;
             apply_button.Cursor = Cursors.Hand;
             apply_button.FlatStyle = FlatStyle.Flat;
-            apply_button.Font = new Font("Segoe UI", 10F);
+            apply_button.Font = new Font("Segoe UI", 15F, FontStyle.Bold, GraphicsUnit.Point, 0);
             apply_button.ForeColor = Color.FromArgb(223, 208, 184);
-            apply_button.Location = new Point(351, 330);
+            apply_button.Location = new Point(14, 320);
             apply_button.Name = "apply_button";
-            apply_button.Size = new Size(68, 32);
+            apply_button.Size = new Size(299, 42);
             apply_button.TabIndex = 22;
-            apply_button.Text = "Link";
+            apply_button.Text = "Link button";
             apply_button.UseVisualStyleBackColor = false;
             apply_button.Click += apply_button_Click;
-            // 
-            // exit_button
-            // 
-            exit_button.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
-            exit_button.BackColor = Color.FromArgb(49, 54, 63);
-            exit_button.BackgroundImageLayout = ImageLayout.None;
-            exit_button.Cursor = Cursors.Hand;
-            exit_button.FlatStyle = FlatStyle.Flat;
-            exit_button.Font = new Font("Segoe UI", 10F);
-            exit_button.ForeColor = Color.FromArgb(255, 105, 97);
-            exit_button.Location = new Point(12, 330);
-            exit_button.Name = "exit_button";
-            exit_button.Size = new Size(68, 32);
-            exit_button.TabIndex = 24;
-            exit_button.Text = "Exit";
-            exit_button.UseVisualStyleBackColor = false;
             // 
             // description_label
             // 
@@ -102,7 +86,7 @@
             description_label.BackColor = Color.Transparent;
             description_label.Font = new Font("Segoe UI", 19F);
             description_label.ForeColor = Color.FromArgb(148, 137, 121);
-            description_label.Location = new Point(14, 105);
+            description_label.Location = new Point(14, 95);
             description_label.Name = "description_label";
             description_label.Size = new Size(405, 222);
             description_label.TabIndex = 25;
@@ -117,10 +101,27 @@
             label1.ForeColor = Color.FromArgb(223, 208, 184);
             label1.Location = new Point(14, 59);
             label1.Name = "label1";
-            label1.Size = new Size(405, 46);
+            label1.Size = new Size(405, 36);
             label1.TabIndex = 26;
             label1.Text = "Version 1.0.0 (BETA)";
             label1.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // github_button
+            // 
+            github_button.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            github_button.BackColor = Color.FromArgb(49, 54, 63);
+            github_button.BackgroundImageLayout = ImageLayout.None;
+            github_button.Cursor = Cursors.Hand;
+            github_button.FlatStyle = FlatStyle.Flat;
+            github_button.Font = new Font("Segoe UI", 15F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            github_button.ForeColor = Color.FromArgb(223, 208, 184);
+            github_button.Location = new Point(319, 320);
+            github_button.Name = "github_button";
+            github_button.Size = new Size(100, 42);
+            github_button.TabIndex = 27;
+            github_button.Text = "Github";
+            github_button.UseVisualStyleBackColor = false;
+            github_button.Click += github_button_Click;
             // 
             // About
             // 
@@ -128,9 +129,9 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(34, 40, 49);
             ClientSize = new Size(431, 374);
+            Controls.Add(github_button);
             Controls.Add(label1);
             Controls.Add(description_label);
-            Controls.Add(exit_button);
             Controls.Add(apply_button);
             Controls.Add(subheader_label);
             Controls.Add(Header_label);
@@ -145,8 +146,8 @@
         private Label subheader_label;
         private Label Header_label;
         private Button apply_button;
-        private Button exit_button;
         private Label description_label;
         private Label label1;
+        private Button github_button;
     }
 }
